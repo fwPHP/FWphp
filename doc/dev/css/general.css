@@ -1,0 +1,460 @@
+html, body{
+    background: rgb(255, 255, 255);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    border-collapse: collapse;
+}
+html, body, button, input, textarea{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(55, 55, 55);
+}
+input[type="text"], input[type="password"]{
+    width: 100%;
+    padding: 4px 8px 6px 8px;
+    border: 0;
+    position: relative;
+    right: 8px;
+}
+input::placeholder{
+    color: rgb(182, 182, 182);
+}
+input:-webkit-autofill{
+    box-shadow: inset 0 0 0 1000px rgb(255, 255, 255);
+}
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+a, button{
+    color: rgb(47, 93, 191);
+    text-decoration: none;
+}
+a:hover, button:hover{
+    color: rgb(47, 84, 164);
+    text-decoration: underline;
+}
+a:active, button:active{
+    color: rgb(255, 0, 0);
+}
+button:focus, select:focus, input:focus{
+    outline: 0;
+}
+
+/* -- #js -- */
+#js{
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+
+/* -- #header -- */
+#header{
+    background: rgb(102, 111, 136);
+}
+#header .left{
+    float: left;
+    padding: 10px 10px 18px 10px;
+}
+#header .logo{
+    width: 22px;
+    height: 22px;
+    background: url(img/logo22x22.png) 0 0 no-repeat;
+}
+#header .logo-href{
+    width: 22px;
+    height: 22px;
+    background: url(img/logo66x22.png) 0 0 no-repeat;
+}
+#header .logo-href:hover{
+    background: url(img/logo66x22.png) -22px 0 no-repeat;
+}
+#header .logo-href:active{
+    background: url(img/logo66x22.png) -44px 0 no-repeat;
+}
+#header .right{
+    float: right;
+    padding: 24px 10px 0 10px;
+}
+#header .right a{
+    padding: 1px;
+    font-size: 12px;
+    white-space: nowrap;
+    color: rgb(209, 212, 220);
+    text-decoration: none;
+    font-weight: bold;
+}
+#header .right a:hover{
+    color: rgb(255, 255, 255);
+}
+#header .right a:active{
+    color: rgb(255, 0, 0);
+}
+
+/* -- #button -- */
+.button{
+    margin-top: 20px;
+    padding: 20px 10px;
+    border-top: 3px double rgb(207, 211, 221);
+}
+.save{
+    margin-top: 1px;
+    padding: 20px 10px;
+    border-top: 1px solid rgb(207, 211, 221);
+}
+#button{
+    padding: 8px 14px 6px 14px;
+    background: rgb(47, 93, 191);
+    font-size: 12px;
+    color: rgb(209, 212, 220);
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#button:hover{
+    background: rgb(47, 84, 164);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#button:active{
+    background: rgb(255, 0, 0);
+}
+
+/* -- #error -- */
+#error{
+    padding: 16px 10px;
+    color: rgb(255, 0, 0);
+}
+
+/* -- #route -- */
+#route{
+    padding-bottom: 7px;
+    border-bottom: 3px double rgb(207, 211, 221);
+}
+#route p{
+    display: block;
+    float: left;
+    padding-top: 10px;
+}
+#route p span{
+    padding: 0 5px;
+    position: relative;
+    bottom: 1px;
+}
+
+/* -- #menu -- */
+#menu{
+    padding: 16px 10px;
+    list-style-type: none;
+}
+#menu li{
+    padding-bottom: 3px;
+}
+#menu i::before{
+    color: rgb(55, 55, 55);
+    margin-right: 5px;
+    opacity: .5;
+}
+#menu a:hover i::before{
+    opacity: .9;
+}
+
+/* -- general -- */
+.container{
+    width: 100%;
+    min-width: 310px;
+    margin: 0 auto;
+}
+@media(min-width: 780px){
+    .container{
+        width: 756px;
+    }
+}
+.red{
+    color: rgb(255, 0, 0);
+}
+.clear{
+    clear: both;
+}
+.name{
+    padding: 10px 16px 2px 16px;
+}
+.input{
+    margin: 0 10px;
+    padding: 0 8px;
+    border: 1px solid rgb(223, 223, 223);
+}
+.warning{
+    padding: 2px 16px 0 16px;
+    color: rgb(255, 0, 0);
+}
+.nowrap{
+    white-space: nowrap;
+}
+.right{
+    text-align: right;
+}
+.width{
+    width: 1px;
+}
+.three{
+    font-size: 13px;
+}
+.top{
+    border-top: 1px solid rgb(207, 211, 221);
+}
+.bottom{
+    border-bottom: 1px solid rgb(207, 211, 221);
+}
+.vertical{
+    border-top: 1px solid rgb(207, 211, 221);
+    border-bottom: 1px solid rgb(207, 211, 221);
+}
+.p5x10{
+    padding: 5px 10px;
+}
+.p5x0x5x10{
+    padding: 5px 0 5px 10px;
+}
+.bulean{
+    padding: 5px 0 5px 10px;
+}
+.bulean span{
+    padding: 0 10px 0 5px;
+}
+html, body{
+    background: rgb(255, 255, 255);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    border-collapse: collapse;
+}
+html, body, button, input, textarea{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(55, 55, 55);
+}
+input[type="text"], input[type="password"]{
+    width: 100%;
+    padding: 4px 8px 6px 8px;
+    border: 0;
+    position: relative;
+    right: 8px;
+}
+input::placeholder{
+    color: rgb(182, 182, 182);
+}
+input:-webkit-autofill{
+    box-shadow: inset 0 0 0 1000px rgb(255, 255, 255);
+}
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+a, button{
+    color: rgb(47, 93, 191);
+    text-decoration: none;
+}
+a:hover, button:hover{
+    color: rgb(47, 84, 164);
+    text-decoration: underline;
+}
+a:active, button:active{
+    color: rgb(255, 0, 0);
+}
+button:focus, select:focus, input:focus{
+    outline: 0;
+}
+
+/* -- #js -- */
+#js{
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+
+/* -- #header -- */
+#header{
+    background: rgb(102, 111, 136);
+}
+#header .left{
+    float: left;
+    padding: 10px 10px 18px 10px;
+}
+#header .logo{
+    width: 22px;
+    height: 22px;
+    background: url(img/logo22x22.png) 0 0 no-repeat;
+}
+#header .logo-href{
+    width: 22px;
+    height: 22px;
+    background: url(img/logo66x22.png) 0 0 no-repeat;
+}
+#header .logo-href:hover{
+    background: url(img/logo66x22.png) -22px 0 no-repeat;
+}
+#header .logo-href:active{
+    background: url(img/logo66x22.png) -44px 0 no-repeat;
+}
+#header .right{
+    float: right;
+    padding: 24px 10px 0 10px;
+}
+#header .right a{
+    padding: 1px;
+    font-size: 12px;
+    white-space: nowrap;
+    color: rgb(209, 212, 220);
+    text-decoration: none;
+    font-weight: bold;
+}
+#header .right a:hover{
+    color: rgb(255, 255, 255);
+}
+#header .right a:active{
+    color: rgb(255, 0, 0);
+}
+
+/* -- #button -- */
+.button{
+    margin-top: 20px;
+    padding: 20px 10px;
+    border-top: 3px double rgb(207, 211, 221);
+}
+.save{
+    margin-top: 1px;
+    padding: 20px 10px;
+    border-top: 1px solid rgb(207, 211, 221);
+}
+#button{
+    padding: 8px 14px 6px 14px;
+    background: rgb(47, 93, 191);
+    font-size: 12px;
+    color: rgb(209, 212, 220);
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#button:hover{
+    background: rgb(47, 84, 164);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#button:active{
+    background: rgb(255, 0, 0);
+}
+
+/* -- #error -- */
+#error{
+    padding: 16px 10px;
+    color: rgb(255, 0, 0);
+}
+
+/* -- #route -- */
+#route{
+    padding-bottom: 7px;
+    border-bottom: 3px double rgb(207, 211, 221);
+}
+#route p{
+    display: block;
+    float: left;
+    padding-top: 10px;
+}
+#route p span{
+    padding: 0 5px;
+    position: relative;
+    bottom: 1px;
+}
+
+/* -- #menu -- */
+#menu{
+    padding: 16px 10px;
+    list-style-type: none;
+}
+#menu li{
+    padding-bottom: 3px;
+}
+#menu i::before{
+    color: rgb(55, 55, 55);
+    margin-right: 5px;
+    opacity: .5;
+}
+#menu a:hover i::before{
+    opacity: .9;
+}
+
+/* -- general -- */
+.container{
+    width: 100%;
+    min-width: 310px;
+    margin: 0 auto;
+}
+@media(min-width: 780px){
+    .container{
+        width: 756px;
+    }
+}
+.red{
+    color: rgb(255, 0, 0);
+}
+.clear{
+    clear: both;
+}
+.name{
+    padding: 10px 16px 2px 16px;
+}
+.input{
+    margin: 0 10px;
+    padding: 0 8px;
+    border: 1px solid rgb(223, 223, 223);
+}
+.warning{
+    padding: 2px 16px 0 16px;
+    color: rgb(255, 0, 0);
+}
+.nowrap{
+    white-space: nowrap;
+}
+.right{
+    text-align: right;
+}
+.width{
+    width: 1px;
+}
+.three{
+    font-size: 13px;
+}
+.top{
+    border-top: 1px solid rgb(207, 211, 221);
+}
+.bottom{
+    border-bottom: 1px solid rgb(207, 211, 221);
+}
+.vertical{
+    border-top: 1px solid rgb(207, 211, 221);
+    border-bottom: 1px solid rgb(207, 211, 221);
+}
+.p5x10{
+    padding: 5px 10px;
+}
+.p5x0x5x10{
+    padding: 5px 0 5px 10px;
+}
+.bulean{
+    padding: 5px 0 5px 10px;
+}
+.bulean span{
+    padding: 0 10px 0 5px;
+}
